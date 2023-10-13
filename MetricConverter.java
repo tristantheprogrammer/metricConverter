@@ -42,12 +42,11 @@ public class MetricConverter {
                 System.out.println(value + " " + source + " = " + result + " " + target);
             }
         }
-
         scanner.close();
     }
 
     private static double convert(double value, String source, String target) {
-        // Implement conversion logic for various units
+        // Math to convert all units
         if (source.equalsIgnoreCase("km") && target.equalsIgnoreCase("mile")) {
             return value * 0.621371;
         } else if (source.equalsIgnoreCase("kg") && target.equalsIgnoreCase("lb")) {
